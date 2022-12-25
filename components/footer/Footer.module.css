@@ -1,0 +1,19 @@
+.footer {
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+  
+    justify-content: space-around;
+
+  }
+
+  /* .fbIcon {
+    width: 2em;
+    height: 2em;
+    
+  }
+
+  .ghIcon {
+    width: 2em;
+    height: 2em;
+  } */

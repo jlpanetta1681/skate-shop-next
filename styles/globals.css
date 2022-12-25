@@ -47,8 +47,8 @@ table {
 	border-spacing: 0;
 }
 
-.footer {
-  position: fixed;
+/* .footer {
+  position: absolute;;
   z-index: 2;
   bottom: 0;
   width: 100%;
@@ -90,4 +90,4 @@ table {
 .nav {
   position: fixed;
 
-}
+} */

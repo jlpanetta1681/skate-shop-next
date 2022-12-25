@@ -1,11 +1,19 @@
 import React from 'react'
-import style from "./Home.module.css"
-
+import style from "./Footer.module.css";
+import { FaFacebook, FaGithub } from 'react-icons/fa'
 
 
 function Footer() {
   return (
-    <div className={style.div} >icons for social media will go here</div>
+  <footer className={style.footer}>
+ <i className="fbIcon">
+  <FaFacebook />
+</i>
+<i className="ghIcon">
+  <FaGithub />
+</i>
+
+</footer>
   )
 }
 
