@@ -41,6 +41,23 @@
   position: relative;
   z-index: 1;
   }
+  .shopImages {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .shopHeader {
+    position: absolute;
+    Z-index: 2;
+    font-size: 2rem;
+  }
+  .pics {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
 
 .missionContainer {
   text-shadow: 2px 2px 4px #000000;
