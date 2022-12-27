@@ -1,9 +1,15 @@
-import React from 'react'
+import Image from 'next/image';
+import style from "../styles/Home.module.css";
 
-function Rinks() {
+function Rinks () {
   return (
-    <div>Rinks</div>
-  )
+    <div>
+      <Image src="/pic2.jpg"
+      alt="skates"
+      fill="true"
+      />
+      </div>
+      )
 }
-
-export default Rinks
+ 
+export default Rinks;
