@@ -1,13 +1,17 @@
 .footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width:50%;
+    justify-content: space-evenly;
+    width:100%;
     position: fixed;
     z-index: 3;
     bottom: 0;
 
 
+  }
+  
+  .i:hover {
+     zoom: 1.3
   }
  
  

@@ -22,13 +22,8 @@ export default function Home() {
         </ul>
       </nav>
       <div className={styles.container}>
-        <Image className={styles.image2}
-          src="/pic2.jpg"
-          alt="skateboard"
-          width={500}
-          height={500}
-        />
-        <h1 className={styles.container}>Join us for local events,<br />Online contests and freebies, and <br /> Video Tutorials every week </h1>
+        <h1>Welcome toRoller Skaters and Skate boarder's Paradise</h1>
+        <h1>Join us for local events, Online contests and freebies, and <br /> Video Tutorials every week!</h1>
       </div>
 
       <Footer />
