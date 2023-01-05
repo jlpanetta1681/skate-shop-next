@@ -3,14 +3,7 @@ import React from 'react'
 function SignUp() {
 
 
-
-
-
-
-
-
-    
-  return (
+return (
    <form>
      <input 
        type="text" 

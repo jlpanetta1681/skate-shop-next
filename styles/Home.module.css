@@ -85,6 +85,15 @@
  
 }
 
+.form_container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  border: 3px solid white; 
+}
+
 .a:hover
  {
   border-radius: 25px;

@@ -1,38 +1,61 @@
-import React from "react";
+import React, { useState } from 'react';
+import styles from '/styles/Home.module.css';
+const LoginForm = () => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-import { useState } from 'react'
+  const handleChange = (event: any) => {
+    if (event.target.name === 'username') {
+      setUsername(event.target.value);
+    } else {
+      setPassword(event.target.value);
+    }
+  };
 
-function Login() {
+  const handleSubmit = (event: any): void => {
+    event.preventDefault();
+    // validate form
+    if (username === '' || password === '') {
+      alert('Please enter a username and password');
+      return;
+    }
+    // submit form
+    setIsLoggedIn(true);
+  };
 
-const [message, setMessage] = useState("message");
-const [isLoggedIn, setIsLoggedIn] = useState("?");
-
-
-    
-const Login = async() => {
-
-}
-
-const checkLogin = async() => {
-
-}
-
-const logout = async() => {
-
-}
   return (
     <div>
-        <h1>Login</h1>
-        <button onClick={Login}>Login</button>
+      {isLoggedIn ? (
+        <h1>Welcome {username}!</h1>
+      ) : ( 
+        <div className={styles.form_container}>
 
-        <button onClick={checkLogin}>Are you logged in?</button>
-
-        <p style = {{color: "red"}}>{isLoggedIn}</p>
-
-        <button onClick={logout}>Logout</button>
-        
+        <form onSubmit={handleSubmit}>
+          <label>
+            Username:
+            <input
+              type="text"
+              name="username"
+              value={username}
+              onChange={handleChange}
+              />
+          </label>
+          <label>
+            Password:
+            <input
+              type="password"
+              name="password"
+              value={password}
+              onChange={handleChange}
+              />
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      )}
     </div>
   );
 };
 
-export default Login
+export default LoginForm;
